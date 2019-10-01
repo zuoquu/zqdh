@@ -1,0 +1,27 @@
+
+#index文件链接伪静态
+
+RewriteEngine On
+RewriteRule ^outlink-([0-9]+)\.html$ /link/outlink.php?id=$1 [N]        
+
+RewriteEngine On
+RewriteRule ^cat-([0-9]+)\.html$ /linklist.php?cid=$1 [N]   
+
+RewriteEngine On
+RewriteRule ^apply\.html$ /apply.php [N]       
+
+RewriteEngine On
+RewriteRule ^index\.html$ /index.php [N]       
+#linklist文件
+
+RewriteEngine On
+RewriteRule ^linklist-([0-9]+)-([0-9]+)\.html$ /linklist.php?cid=$1&page=$2 [N]        
+
+
+#apply文件
+RewriteEngine On
+RewriteRule ^inlink-([0-9]+)\.html$ /link/inlink.php?id=$1
+ [N]      
+
+
+  
