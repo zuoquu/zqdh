@@ -40,17 +40,17 @@ $backstar="<div class='dh_bg'>
 
 
 <ul class='classy-list'>
-<li><a class='item H-1' href='http://dh.zl88.net/outlink-181.html'>招固</a></li>
-<li><a class='item' href='http://dh.zl88.net/outlink-212.html'>招固</a></li>
-<li><a class='item H-2' href='http://dh.zl88.net/outlink-224.html'>招固</a></li>
-<li><a class='item' href='http://hblzz.cn'>招固</a></li>
+<li><a class='item H-1' href='http://dh.zl88.net/outlink-586.html'>赣县</a></li>
+<li><a class='item' href='http://dh.zl88.net/outlink-589.html'>紫苏</a></li>
+<li><a class='item H-2' href='http://dh.zl88.net/outlink-632.html'>92影视</a></li>
+<li><a class='item' href='http://dh.zl88.net/outlink-650.html'>站长blog</a></li>
 <li><a class='item L-1' href='http://zl88.net'>引领主流</a></li>
-<li><a class='item' href='http://dh.zl88.net/outlink-288.html'>招固</a></li>
-<li><a class='item L-4' href='http://'>招固</a></li>
-<li><a class='item' href='http://'>招固</a></li>
-<li><a class='item L-2' href='http://'>招固</a></li>
-<li><a class='item' href='http://'>招固</a></li>
-<li><a class='item L-3' href='http://'>招固</a></li>
+<li><a class='item' href='https://aite.xyz/'>爱特官网</a></li>
+<li><a class='item L-4' href='http://zntx.cc'>八神</a></li>
+<li><a class='item' href='http://dh.zl88.net/outlink-662.html'>天下</a></li>
+<li><a class='item L-2' href='http://dh.zl88.net/outlink-674.html'>美图啦</a></li>
+<li><a class='item' href='http://taoyuh.cn'>小妖精导航</a></li>
+<li><a class='item L-3' href='http://msl.qidh.cn/?a=244'>秒收录联盟</a></li>
 <li><a class='item' href='http://'>招固</a></li>
 <li><a class='item Z-1' href='http://'>招固</a></li>
 <li><a class='item' href='http://'>招固</a></li>

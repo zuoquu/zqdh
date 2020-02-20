@@ -18,11 +18,11 @@ vlink int(40),
 PRIMARY KEY  (id)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;";
 
-if(mysql_query($create)){
-echo "数据创建成功；<br/>温馨提示:务必返回首页进入后台修改密码和配置网站数据，首次安装密码为空。安装完成后务必删除install文件夹，防止数据被修改<br/>";
+if($dbh->query($create)){
+echo "数据创建成功；<br/>";
 echo '<a href="/index.php">返回首页</a>';
 }else{
-exit("安装失败，请重新尝试安装<br/>".mysql_error());
+exit("安装失败，请重新尝试安装<br/>";
 }
 }
 ?>

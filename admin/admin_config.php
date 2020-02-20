@@ -127,7 +127,7 @@ echo '<br/>设置成功 <a href="/admin/admin_config.php">返回前页</a>';
 }
 
 
-echo '<div class="top"><a href="/admin/admin.php">返回后台</a>/<a href="/index.php">返回首页</a><br>©2015~2016 <a href="http://zqblog.zl88.net">Tune</a>导航<div>';
+echo '<div class="top"><a href="/admin/admin.php">返回后台</a>/<a href="/index.php">返回首页</a><br>©2015~2016 <a href="http://zuoquu.com">Tune</a>导航<div>';
 
 //管理文件bottom
 }else{

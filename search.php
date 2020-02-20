@@ -20,13 +20,14 @@ echo '
 }else{
     $search = $_POST['searchs'];
 
-$sql = mysql_query("select * from tune_LINK where shortname like '%$search%' or url like '%$search%' order by id desc");
-
-if(mysql_num_rows($sql)<=0){
+$sql = "select count(*) from tune_LINK where shortname like \"%".$search."%\" or url like \"%".$search."%\" order by id desc";
+$numsearch=$dbh->query($sql)->fetchColumn();
+if($numsearch<=0){
 echo "搜索引擎搜不到了，换个关键字试试吧！";
 }else{
+    $sql = "select * from tune_LINK where shortname like \"%".$search."%\" or url like \"%".$search."%\" order by id desc";
 echo "<div class='title'>查询信息</div>";
-while($row=mysql_fetch_array($sql)){
+foreach($dbh->query($sql) as $row){
 
 if($row['cat_id']==1){$type="源码";
 }elseif($row['cat_id']==2){$type="论坛";

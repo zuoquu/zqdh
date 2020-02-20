@@ -1,12 +1,16 @@
 <?php
-/*if(!file_exists("config.php")){
-header("Location:install.php");
-}*/
+$db_ms='mysql';
 require "config.php";
-$conn=mysql_connect($db,$user,$dbpass);
-if(!$conn){
-exit('数据库连接失败，请检查后重试</br>如果是第一次使用，请访问：http://网站地址/install.php进行程序安装。');
+$dbh=$db_ms.':host='.$db.';'.'dbname='.$dbname;
+function conn($dbh,$user,$dbpass){
+    static $conn = null;
+    if ($conn === null) {
+        $conn = new PDO($dbh,$user,$dbpass);
+        $conn->query('set names utf8');
+        $conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false); 
+        
+    }
+    return $conn;
 }
-mysql_select_db($dbname,$conn);
-mysql_query("set names 'utf8'");
+$dbh=conn($dbh,$user,$dbpass);
 ?>

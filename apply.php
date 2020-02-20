@@ -11,9 +11,9 @@ include './conn.php';
 include './encrypt.php';
 include './admin/freelink.php';
 include './admin/webconfig.php';
-   $new_sql = mysql_query("SELECT * from tune_LINK order by id desc limit 0,1");
+   $new_sql = "SELECT * from tune_LINK order by id desc limit 0,1";
 
-if($row=mysql_fetch_array($new_sql)){$id=$row[id]+1;}
+if($row=$dbh->query($new_sql)->fetch()){$id=$row[id]+1;}
 
 echo '<div class="background">';
 if ( !isset($_POST['sname'])){
@@ -76,14 +76,14 @@ echo "出错啦！每项不能留空澳！<a href='/apply.php'>返回申请</a>"
     $in = filters_all($in);
 
    $sql="insert into tune_LINK(shortname,longname,cat_id,url,conversation,instruction,display,views,outviews)values('$sn','$ln','$cat_id','$url','$con','$in','$display','$views','$outviews')";
-if(mysql_query($sql)){
+if($dbh->query($sql)){
 //下面是回链地址，修改域名即可
 echo '<div class="title">回链地址</div>申请成功，请等待审核<br/>回链地址：'.$h_url.'/inlink-'.$id.'.html<br>';
 echo $jianjie;
 echo '<br><a href="/apply.html">返回申请</a> <a href="/index.html">返回首页</a>';
 }
 else{
-echo '申请失败，不能为空<br/>'.mysql_error();
+echo '申请失败，不能为空<br/>';
 }
 }//是否为空
 }

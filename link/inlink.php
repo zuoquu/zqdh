@@ -12,10 +12,10 @@ include '../admin/webconfig.php';
 date_default_timezone_set("Asia/Shanghai"); 
 $id = $_GET['id'];
 $inviews_sql = "UPDATE tune_LINK SET views = views+1 where id='$id'";
-mysql_query($inviews_sql);
+$dbh->query($inviews_sql);
 $date = time();
 $vlink_sql = "UPDATE tune_LINK SET vlink = '$date' where id='$id'";
-mysql_query($vlink_sql);
+$dbh->query($vlink_sql);
 //改成自己的网站
 //$url = "http://dh.zl88.net";
 header('refresh:1;url='.$h_url.'');

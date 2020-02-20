@@ -16,7 +16,7 @@ echo '<form action="" method="post">
 <input type="password" name="dbpass"/><br/>
 <input type="submit" name="submit" value="安装">
 </form>
-该程序由作曲制作';
+该程序由戏小曲制作';
 }
 
 else{

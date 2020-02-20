@@ -48,7 +48,10 @@ a:hover{ text-decoration:underline;}
 .dh_kz img {width:42px;height:42px;}
 
 textarea{
-height:100px;
+width:480px;
+height:200px; 
+border-style: solid;
+border-color: #000000;
 }
 .zqu {
 

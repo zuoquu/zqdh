@@ -19,8 +19,8 @@ if($pass==$_SESSION['pass']){
 //管理文件top
 
 if($mode == 'modify'){
-   $sql = mysql_query("SELECT * from tune_LINK where id = '$id'");
-  if($row=mysql_fetch_array($sql)){
+   $sql = "SELECT * from tune_LINK where id = ".$id;
+  if($row=$dbh->query($sql)->fetch()){
 
 if ( !isset($_POST['sname'])){
 echo '
@@ -77,7 +77,7 @@ echo '<input type="submit" value="确认修改">
 $x_sql="UPDATE tune_LINK SET shortname='$sn',longname='$ln',cat_id='$cat_id',url='$url',conversation='$con',instruction='$in',views='$views',outviews='$outviews',display='$display' WHERE id = '$id'";
 
 
-if(mysql_query($x_sql)){
+if($dbh->query($x_sql)){
 echo '->修改成功！<br/><a href="/admin/admin_link.php">返回链接管理</a> ';
 }
 }
@@ -85,7 +85,7 @@ echo '->修改成功！<br/><a href="/admin/admin_link.php">返回链接管理</
 }
 
 
-echo '<div class="top"><a href="/admin/admin.php">返回后台</a>/<a href="/index.php">返回首页</a><br>©2015~2016 <a href="http://zqblog.zl88.net">Tune</a>导航<div>';
+echo '<div class="top"><a href="/admin/admin.php">返回后台</a>/<a href="/index.php">返回首页</a><br>©2015~2016 <a href="http://zuoquu.com">Tune</a>导航<div>';
 
 
 //管理文件bottom
